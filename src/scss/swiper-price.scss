@@ -1,0 +1,33 @@
+@use './menu.scss';
+
+.swiper-price {
+  min-height: 300px;
+  max-width: 320px;
+  background-color: $main-color;
+}
+.swiper-price__wrapper .swiper-price__slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 16px;
+  padding: 16px;
+  height: 200px;
+  width: 260px;
+  border: 1px solid #eaeaea;
+  background-color: $primary-color;
+}
+.swiper-price__wrapper .swiper-price__slide:first-child {
+  margin-left: 16px;
+}
+.swiper-price__slide img {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.swiper-price__pagination {
+  margin-bottom: 4px;
+}
+h3 {
+  font-size: 14px;
+  color: $grey-color;
+}

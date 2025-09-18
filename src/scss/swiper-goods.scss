@@ -1,0 +1,27 @@
+@use './menu.scss';
+.swiper-text {
+  min-height: 300px;
+  max-width: 320px;
+  background-color: $main-color;
+}
+.swiper-text__wrapper .swiper-text__slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16px;
+  height: 160px;
+  width: 240px;
+  border: 1px solid #eaeaea;
+  background-color: $primary-color;
+}
+.swiper-text__wrapper .swiper-text__slide:first-child {
+  margin-left: 16px;
+}
+.swiper-text__slide img {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.swiper-text__pagination {
+  margin-bottom: 50px;
+}

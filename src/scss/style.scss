@@ -1,0 +1,30 @@
+@import './font.scss';
+@import './menu.scss';
+@import './main320.scss';
+@import './swiper-brand.scss';
+@import 'swiper-goods.scss';
+@import './swiper-price.scss';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: $primary-color;
+  color: $primary-color2;
+  font-family: 'TTLakes';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.hide {
+  display: none;
+}
+.btn {
+  background: none;
+  border: none;
+}
