@@ -1,7 +1,7 @@
+// Показать еще текст
 const showMoreBtn = document.querySelector('.show-moreBtn')
 const arrow = document.querySelector('.arrow')
 const text = document.querySelector('.show-more')
-
 showMoreBtn.addEventListener('click', () => {
   document.querySelector('.content-text2').classList.toggle('hide')
   const hide = text.textContent === 'Показать больше'
@@ -9,6 +9,7 @@ showMoreBtn.addEventListener('click', () => {
   arrow.classList.toggle('rotate', hide)
 })
 
+// Показать еще слайдов
 function showMoreSwiper(btn, content, arrow, hide, slides, countRule) {
   btn.addEventListener('click', () => {
     const contentElement = document.querySelector(content)
