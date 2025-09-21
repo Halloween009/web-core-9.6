@@ -12,15 +12,13 @@ $gradient-color: linear-gradient(to right, $main-color 30%, $primary-color 70%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
-  height: 100vh;
   box-sizing: border-box;
 }
 %header-shared {
   display: flex;
-  justify-content: start;
   align-items: center;
   gap: 1em;
+  width: 100%;
 }
 
 .menu {
@@ -28,6 +26,8 @@ $gradient-color: linear-gradient(to right, $main-color 30%, $primary-color 70%);
   padding: $base-padding;
   position: fixed;
   z-index: 1000;
+  width: 320px;
+  height: 100vh;
   translate: -100%;
   transition: 0.5s;
   background-color: $primary-color;
@@ -47,13 +47,14 @@ $gradient-color: linear-gradient(to right, $main-color 30%, $primary-color 70%);
   list-style: none;
   padding: 0;
   gap: 16px;
+  margin-top: 40px;
 }
 .navigation__elem {
   height: 32px;
   border-left: 4px solid transparent;
   transition: border-color 0.2s;
   padding-left: 24px;
-  translate: -24px;
+  translate: -16px;
 }
 .navigation__elem:hover {
   border-color: $border-color;
@@ -82,4 +83,24 @@ $gradient-color: linear-gradient(to right, $main-color 30%, $primary-color 70%);
 .lang li:hover {
   font-weight: normal;
   color: $grey-color;
+}
+@media only screen and (min-width: 321px) {
+  .menu {
+    box-shadow: 6px 0 12px 5px #0e185033;
+    translate: -120%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .menu {
+    position: static;
+    translate: 0;
+    width: 280px;
+    height: 100vh;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    box-shadow: none;
+  }
+  .closeBtn {
+    display: none;
+  }
 }

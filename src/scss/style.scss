@@ -1,9 +1,9 @@
 @import './font.scss';
 @import './menu.scss';
-@import './main320.scss';
-@import './swiper-brand.scss';
-@import 'swiper-goods.scss';
-@import './swiper-price.scss';
+@import './header.scss';
+@import './main.scss';
+@import './bottom-part.scss';
+@import './swipers.scss';
 
 html {
   box-sizing: border-box;
@@ -20,6 +20,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  background-color: $main-color;
 }
 .hide {
   display: none;
@@ -27,4 +28,10 @@ body {
 .btn {
   background: none;
   border: none;
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
 }

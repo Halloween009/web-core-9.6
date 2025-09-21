@@ -1,0 +1,35 @@
+.main__header {
+  position: fixed;
+  @extend %header-shared;
+  border-bottom: 1px solid $border-color;
+  padding: 24px 12px;
+  background-color: $primary-color;
+  z-index: 999;
+
+  .main__right-header {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 16px;
+  }
+  .main__left-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    gap: 16px;
+  }
+  .header-divider {
+    border-left: 2px solid $divider-color;
+    height: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body .main .main__header {
+    display: none;
+  }
+  body .main .main__content {
+    margin-top: 0;
+  }
+}

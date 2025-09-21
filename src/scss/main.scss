@@ -1,0 +1,106 @@
+@import './menu.scss';
+
+.main {
+  @extend %style-shared;
+  padding-top: 0;
+  padding-left: 0;
+  background-color: $main-color;
+
+  .hide {
+    display: none;
+  }
+  .main__content {
+    margin-top: 77px;
+    padding: 42px 16px 32px 16px;
+    .main__list {
+      white-space: nowrap;
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 0;
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .main__list::-webkit-scrollbar {
+      display: none;
+    }
+    h1 {
+      margin: 0;
+      height: 40px;
+      border-left: 4px solid $border-color;
+      padding-left: 16px;
+      translate: -16px;
+      overflow: hidden;
+    }
+    li {
+      padding: 16px 8px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+    }
+    li:hover {
+      border-color: $border-color;
+    }
+    .show-more {
+      display: flex;
+      align-items: center;
+      padding: 16px 0;
+    }
+    .show-moreBtn {
+      display: flex;
+      align-items: center;
+    }
+    .cps-logo {
+      margin-left: -16px;
+    }
+    .text {
+      color: $primary-color2;
+      font-size: 14px;
+    }
+  }
+  .rotate {
+    transform: scaleY(-1);
+  }
+  h2 {
+    font-size: 16px;
+    color: $grey-color;
+    padding-left: 16px;
+  }
+}
+.title1440 {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .main__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .cps-logo {
+    padding: 0 8px 0 48px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main__title h1 {
+    margin-right: auto; /* h1 остается слева */
+  }
+  .title1440 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .main__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .title1440:first-of-type {
+    margin-left: auto;
+  }
+  .title1440 span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

@@ -38,6 +38,55 @@ function createSlide(service, price, time) {
     </div>
   </div>`
 }
-document.querySelector('.swiper-price__wrapper').innerHTML = slides
-  .map(({ service, price, time }) => createSlide(service, price, time))
-  .join('')
+
+function createTable() {
+  return `<table>
+  <thead>
+    <tr>
+      <th>Ремонтные услуги</th>
+      <th>Цена</th>
+      <th>Срок</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    ${slides
+      .map(
+        ({ service, price, time }) => `<tr>
+        <td>${service}</td>
+        <td>${price}</td>
+        <td>${time}</td>
+        <td><img src="./img/order.png" alt="order" /></td>
+      </tr>`
+      )
+      .join('')}
+  </tbody>
+</table>`
+}
+
+const isMobile = window.innerWidth < 768
+const container = document.querySelector('.swiper-price__wrapper')
+
+if (isMobile) {
+  container.innerHTML = slides
+    .map(({ service, price, time }) => createSlide(service, price, time))
+    .join('')
+} else {
+  container.innerHTML = createTable()
+}
+
+let pastState = window.innerWidth < 768
+window.addEventListener('resize', () => {
+  const currentState = window.innerWidth < 768
+  if (currentState !== pastState) {
+    const container = document.querySelector('.swiper-price__wrapper')
+    if (currentState) {
+      container.innerHTML = slides
+        .map(({ service, price, time }) => createSlide(service, price, time))
+        .join('')
+    } else {
+      container.innerHTML = createTable()
+    }
+  }
+  pastState = currentState
+})

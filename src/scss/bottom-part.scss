@@ -1,0 +1,35 @@
+.menu__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  .small-text {
+    font-size: 12px;
+    color: $primary-color2;
+  }
+  .agreement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    color: $primary-color2;
+    font-weight: bold;
+  }
+}
+.footer-text {
+  background-color: $main-color;
+  font-size: 14px;
+  color: $grey-color;
+  font-weight: normal;
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+}
+h2 {
+  border-top: 1px solid $header-color;
+  background: $gradient-color;
+  padding: 16px 16px;
+  margin: 0;
+}
