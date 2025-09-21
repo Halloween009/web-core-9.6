@@ -48,14 +48,27 @@
       </div>
     </div>
     <div class="main">
-      <div class="main__header"><button class="openBtn btn"><img src="./img/burger.png" alt=""></button>
-        <img src="./img/Group.png" alt="">
-        <div class="header-divider"></div>
-        <img src="./img/repair.png" alt="">
-        <img src="./img/checkstatus.png" alt="">
+      <div class="main__header">
+        <div class="main__left-header"><button class="openBtn btn"><img src="./img/burger.png" alt="menu"></button>
+          <div class="elems-to-hide header-divider hide"></div>
+          <img src="./img/Group.png" alt="logo"></div>
+        <div class="main__right-header">
+          <img src="./img/call.png" alt="call" class="elems-to-hide hide">
+          <img src="./img/chat.png" alt="chat" class="elems-to-hide hide">
+          <img src="./img/profile.png" alt="profile" class="elems-to-hide hide">
+          <div class="header-divider"></div>
+          <img src="./img/repair.png" alt="repair">
+          <img src="./img/checkstatus.png" alt="check status">
+        </div>
       </div>
       <div class="main__content">
-        <h1>Услуги и сервисы</h1>
+        <div class="main__title">
+          <h1>Услуги и сервисы</h1>
+          <div class="title1440"><span>Оставить заявку</span>
+            <img src="./img/repair.png" alt="repair"></div>
+          <div class="title1440"><span>Статус ремонта</span>
+            <img src="./img/checkstatus.png" alt="status"></div>
+        </div>
         <ul class="main__list">
           <li>Ремонтируемые устройства</li>
           <li>Дополнительные услуги</li>
@@ -63,34 +76,38 @@
           <li>Адреса сервисных центров</li>
           <li>Специальные цены</li>
         </ul>
-        <p class="content-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          aperiam deleniti sunt asperiores eligendi maxime, officiis ducimus
-          nulla esse est natus illum autem hic porro explicabo modi eius ea
-          consequatur magni blanditiis iste ut ab dicta. Asperiores corrupti,
-          dolore natus incidunt quos ipsa velit atque id, reprehenderit earum
-          porro saepe.</p>
-        <p class="content-text2 text hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima
-          sed exercitationem fugiat, dolorum officiis tempore nemo eius id,
-          iusto non pariatur nam necessitatibus culpa aspernatur esse quod qui
-          sunt?</p>
-        <button class="btn show-moreBtn"><img src="./img/expand.png" alt="arr" class="arrow"><span class="show-more">Читать далее</span></button>
-        <img src="./img/cps.png" alt="cps" class="cps-logo">
-      </div>
+        <div class="main__container">
+          <div class="main__text">
+            <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aperiam deleniti sunt asperiores eligendi maxime, officiis ducimus
+              nulla esse est natus illum autem hic porro explicabo modi eius ea
+              consequatur magni blanditiis iste ut ab dicta. Asperiores
+              corrupti, dolore natus incidunt quos ipsa velit atque id,
+              reprehenderit earum porro saepe.</p><br>
+
+            <p class="content-text2 hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              minima sed exercitationem fugiat, dolorum officiis tempore nemo
+              eius id, iusto non pariatur nam necessitatibus culpa aspernatur
+              esse quod qui sunt?</p>
+            <button class="btn show-moreBtn">
+              <img src="./img/expand.png" alt="arr" class="arrow"><span class="show-more">Показать больше</span></button>
+          </div>
+          <img src="./img/cps.png" alt="cps" class="cps-logo"> </div></div>
       <h2>Ремонт различных видов брендов</h2>
       <div class="swiper-logo swiper">
         <div class="swiper-logo__wrapper swiper-wrapper">
           <div class="swiper-logo__slide swiper-slide"><img src="./img/acer.png" alt="acer"><img src="./img/go.png" alt="go"></div>
           <div class="swiper-logo__slide swiper-slide"><img src="./img/apple.png" alt="apple"><img src="./img/go.png" alt="go"></div>
-          <div class="swiper-logo__slide swiper-slide"><img src="./img/dell.png" alt="dell"><img src="./img/go.png" alt="go"></div>
           <div class="swiper-logo__slide swiper-slide"><img src="./img/lenovo.png" alt="lenovo"><img src="./img/go.png" alt="go"></div>
           <div class="swiper-logo__slide swiper-slide"><img src="./img/bosch.png" alt="bosch"><img src="./img/go.png" alt="go"></div>
           <div class="swiper-logo__slide swiper-slide"><img src="./img/hp.png" alt="hp"><img src="./img/go.png" alt="go"></div>
           <div class="swiper-logo__slide swiper-slide"><img src="./img/lg.png" alt="lg"><img src="./img/go.png" alt="go"></div>
-          <div class="swiper-logo__slide swiper-slide"><img src="./img/samsung.png" alt="samsung"><img src="./img/go.png" alt="go"></div>
-          <div class="swiper-logo__slide swiper-slide"><img src="./img/sony.png" alt="sony"><img src="./img/go.png" alt="go"></div>
-          <div class="swiper-logo__slide swiper-slide"><img src="./img/xiaomi.png" alt="xiaomi"><img src="./img/go.png" alt="go"></div>
-          <div class="swiper-logo__slide swiper-slide"><img src="./img/nokia.png" alt="nokia"><img src="./img/go.png" alt="go"></div>
+          <div class="swiper-logo__slide swiper-slide hide show1440"><img src="./img/samsung.png" alt="samsung"><img src="./img/go.png" alt="go"></div>
+          <div class="swiper-logo__slide swiper-slide hide show1440"><img src="./img/sony.png" alt="sony"><img src="./img/go.png" alt="go"></div>
+          <div class="swiper-logo__slide swiper-slide hide"><img src="./img/nokia.png" alt="nokia"><img src="./img/go.png" alt="go"></div>
         </div>
+        <button class="btn swiper-btn logo-btn">
+          <img src="./img/expand.png" alt="arr" class="arrow logo-arrow"><span class="show-more logo-text">Показать больше</span></button>
         <div class="swiper-logo__pagination swiper-pagination"></div>
       </div>
       <h2>Ремонт различных видов техники</h2>
@@ -99,21 +116,20 @@
           <div class="swiper-text__slide swiper-slide">Ремонт ноутбуков <img src="./img/go.png" alt=""></div>
           <div class="swiper-text__slide swiper-slide">Ремонт планшетов <img src="./img/go.png" alt=""></div>
           <div class="swiper-text__slide swiper-slide">Ремонт телефонов <img src="./img/go.png" alt=""></div>
-          <div class="swiper-text__slide swiper-slide">Ремонт моноблоков <img src="./img/go.png" alt=""></div>
-          <div class="swiper-text__slide swiper-slide">Ремонт принтеров <img src="./img/go.png" alt=""></div>
-          <div class="swiper-text__slide swiper-slide">Ремонт сканеров <img src="./img/go.png" alt=""></div>
-          <div class="swiper-text__slide swiper-slide">Ремонт проекторов <img src="./img/go.png" alt=""></div>
-          <div class="swiper-text__slide swiper-slide">Ремонт ремонта <img src="./img/go.png" alt=""></div>
-          <div class="swiper-text__slide swiper-slide">Ремонт ремня <img src="./img/go.png" alt=""></div>
-          <div class="swiper-text__slide swiper-slide">Ремонт салфеток <img src="./img/go.png" alt=""></div>
+          <div class="swiper-text__slide swiper-slide hide show1440">Ремонт моноблоков <img src="./img/go.png" alt=""></div>
+          <div class="swiper-text__slide swiper-slide hide">Ремонт сканеров <img src="./img/go.png" alt=""></div>
+          <div class="swiper-text__slide swiper-slide hide">Ремонт проекторов <img src="./img/go.png" alt=""></div>
+          <div class="swiper-text__slide swiper-slide hide">Ремонт ремонта <img src="./img/go.png" alt=""></div>
+          <div class="swiper-text__slide swiper-slide hide">Ремонт ремня <img src="./img/go.png" alt=""></div>
+          <div class="swiper-text__slide swiper-slide hide">Ремонт салфеток <img src="./img/go.png" alt=""></div>
         </div>
+        <button class="btn swiper-btn text-btn">
+          <img src="./img/expand.png" alt="arr" class="arrow text-arrow"><span class="show-more text-text">Показать больше</span></button>
         <div class="swiper-text__pagination swiper-pagination"></div>
       </div>
       <h2>Цены на услуги</h2>
       <div class="swiper-price swiper">
-        <div class="swiper-price__wrapper swiper-wrapper">
-          
-        </div>
+        <div class="swiper-price__wrapper swiper-wrapper"> </div>
         <div class="swiper-price__pagination swiper-pagination"></div>
       </div>
       <div class="main_bottom">
